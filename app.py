@@ -5,20 +5,19 @@ To initialize the app:
 """
 
 from model import ConwaysGameOfLife
-from mesa.visualization import (
-    SolaraViz,
-    make_space_component,
-)
+from mesa.visualization import SolaraViz, make_space_component
+import solara
 
-
+"""Function that defines how the agents appear in the solara app."""
 def agent_portrayal(agent):
     return {
-        "color": "white" if agent.state == 0 else "black",
+        # Black = DEAD cells, white = ALIVE cells
+        "color": "white" if agent.state == 0 else "green",
         "marker": "s",
-        "size": 25,
+        "size": 20,
     }
 
-
+"""Function that proceses the game of life."""
 def post_process(ax):
     ax.set_aspect("equal")
     ax.set_xticks([])
@@ -33,18 +32,18 @@ model_params = {
     },
     "width": {
         "type": "SliderInt",
-        "value": 50,
+        "value": 40,
         "label": "Width",
         "min": 5,
-        "max": 60,
+        "max": 40,
         "step": 1,
     },
     "height": {
         "type": "SliderInt",
-        "value": 50,
+        "value": 40,
         "label": "Height",
         "min": 5,
-        "max": 60,
+        "max": 40,
         "step": 1,
     },
     "initial_fraction_alive": {
@@ -79,6 +78,6 @@ page = SolaraViz(
     model1,
     components=[SpaceGraph],
     model_params=model_params,
-    name="Game of Life",
+    name="Game of Life"
 )
 page  # noqa
