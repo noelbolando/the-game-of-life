@@ -1,4 +1,6 @@
-"""Defines the behavior of an individual cell, which can be in two states: DEAD or ALIVE. """
+"""
+Defines the behavior of an individual cell, which can be in two states: DEAD or ALIVE
+"""
 
 from mesa import Agent
 

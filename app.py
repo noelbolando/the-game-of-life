@@ -12,7 +12,7 @@ import solara
 def agent_portrayal(agent):
     return {
         # Black = DEAD cells, white = ALIVE cells
-        "color": "white" if agent.state == 0 else "green",
+        "color": "white" if agent.state == 0 else "black",
         "marker": "s",
         "size": 20,
     }
