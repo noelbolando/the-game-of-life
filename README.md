@@ -6,16 +6,21 @@ I made this little project as a way to practice simulation tools with Python, sp
 ## Project Details ##
 As you'll see, there are three files in this repo:
 1. agents.py: this file defines the behavior of an agent, or in the case of this example, an individual cell, which can be defined in one of two states: DEAD or ALIVE.
-2. model.py: this file defines the model itself, and it is initialized with a random configuration of the two possible states of the agents. That is, it initalizes random configiruations for DEAD and ALIVE cells.
-3. app.py: using Solara, this file defines an interactive visualization so that users can play the role of some high-ordered entity, possibly even what some would consider 'God', in The Game of Life. 
+2. app.py: using Solara, this file defines an interactive visualization so that users can play the role of some high-ordered entity, possibly even what some would consider 'God', in The Game of Life. 
+3. model.py: this file defines the model itself, and it is initialized with a random configuration of the two possible states of the agents. That is, it initalizes random configiruations for DEAD and ALIVE cells.
+
 
 ## How to Use ##
+NOTE: You will need to use a newer version of Python (3.13.X) to run this model.
+
 I've tried to make this as simple as possible for those with little to no coding experience:
 1. Clone all three files in this projet.
 2. Make sure all your packages are installed. Note that I had to manually 
 ```` $ pip install mesa ````
-and 
 ```` $ pip install solara ````
+```` $ pip install matplotlib ````
+```` $ pip install altair ````
+```` $ pip install networkx ````
 3. Initiate your app with the following command:
 ```` $ solara run app.py ````
 ENJOY! =D
