@@ -1,9 +1,12 @@
 # The Game of Life #
 
-https://github.com/user-attachments/assets/aae33998-ae24-47ef-aaf1-74fdddd2e440
-
 ## Project Description ##
 I made this little project as a way to practice simulation tools with Python, specifically with mesa. I found the outline for this example from the mesa documentation site which I'll list below as a reference. 
+
+Play the Game of Life -->
+
+https://github.com/user-attachments/assets/aae33998-ae24-47ef-aaf1-74fdddd2e440
+
 
 ## Project Details ##
 As you'll see, there are three files in this repo:
